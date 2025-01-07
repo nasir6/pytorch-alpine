@@ -52,7 +52,6 @@ ENV USE_FBGEMM=0 \
 RUN python setup.py install && \
     rm -rf /tmp/pytorch && \
     rm -rf /root/.cache && \
-    apk del .build-deps && \
     rm -rf /var/cache/apk/* && \
     rm -rf /tmp/*
 
